@@ -1,4 +1,4 @@
-package skeleton;
+package com.seydou.berthe.cucumber.example;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
