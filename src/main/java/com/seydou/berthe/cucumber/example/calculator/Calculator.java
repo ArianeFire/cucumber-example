@@ -11,9 +11,13 @@ public class Calculator {
 
     private Integer number1;
     private Integer number2;
-    private Integer sum;
+    private Integer result;
 
     public void performSum() {
-        sum = getNumber1() + getNumber2();
+        result = getNumber1() + getNumber2();
+    }
+
+    public void performSubtract() {
+        result = getNumber1() - getNumber2();
     }
 }

@@ -20,8 +20,12 @@ public class CalculatorStepdefs implements En {
             calculator.performSum();
         });
 
-        Then("^It must be equals to (\\d+)$", (Integer sum) -> {
-            assertEquals(calculator.getSum(), sum);
+        When("^I calculate the subtract$", () -> {
+            calculator.performSubtract();
+        });
+
+        Then("^The result must be equals to (\\d+)$", (Integer result) -> {
+            assertEquals(calculator.getResult(), result);
         });
     }
 }
